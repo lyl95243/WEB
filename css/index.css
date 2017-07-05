@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{list-style: none;}
+a{text-decoration: none}
+body{font-family: Arial,'微软雅黑';}
+img{display:block}
+.left{float: left}
+.right{float: right }
+.main{
+    width: 1100px;
+    margin:0 auto;
+}
+/*导航开始*/
+.nav_wrap{
+    width: 100%;
+    height: 63px;
+    border-bottom: 5px solid #418fe6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.nav{
+    height: 50px;
+}
+.logo{
+    margin-right: 70px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+.nav ul{
+    position: relative;
+}
+.nav ul li{
+    float: left;
+    line-height: 50px;
+    cursor: pointer;
+    width: 180px;
+    text-align: center;
+    margin-top: 13px;
+}
+.nav ul li a{
+    color: #333;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.nav ul li:hover a{
+    color: #00C1B3;
+}
+.nav ul .active{
+    margin-top:5px;
+}
+.nav ul .active a{
+    font-size: 16px;
+    color: #00C1B3;
+}
+.nav .sanjiao{
+    position: absolute;
+    bottom:0;
+    left: 80px;
+}
+/*内容开始*/
+.content,.contentt,.content_wrap{
+    width: 100%;
+}
+.content{
+    position: relative;
+    overflow: hidden;
+}
+.content_wrap{
+    position: absolute;
+}
+/*第一屏开始*/
+.content_one{
+    background: olive;
+    position: relative;
+}
+.content_one_wrap{
+    width: 200%;
+}
+.content_one_wrap li{
+    float: left;
+    width: 50%;
+}
+.content_one_wrap li>img{
+    width: 100%;
+    height: 100%;
+}
+.content_one .next,.content_one .prev{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top:50%;margin-top: -32px;
+    z-index: 99;
+    cursor:pointer;
+}
+.content_one .prev{  left: 20px;  }
+.content_one .next{  right: 20px;  }
+/*第二屏开始*/
+.content_two{
+    background: url(../images/07.jpg);
+    background-size: 100% 100%;
+}
+.content_twoTop{
+    height: 200px;
+}
+.content_twoTop ul li{
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+    background: burlywood;
+    float: left;
+    margin:40px 25px 0 0;
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.content_twoTop ul .content_twoTopLi,.content_twoTop ul li:hover{
+    background: #d91c25;
+    color: white;
+}
+.content_twoBottom{
+    width: 1100px;
+    height: 580px;
+    position: relative;
+}
+.content_twoBottom ul li{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 1100px;
+    height: 600px;
+    font-size: 50px;
+    text-align: center;
+    background:rgba(0,0,0,0.2);
+    display: none;
+}
+
+/*第三屏开始*/
+.content_three{
+    background:url(../images/09.jpg);
+    background-size: 100% 100%;
+}
+
+
+/*第四屏开始*/
+.content_four{
+    background: url(../images/10.jpg);
+    background-size: 100% 100%;
+}
+
+
+/*第五屏开始*/
+.content_five{
+    background: url(../images/08.jpg);
+    background-size: 100% 100%;
+}
+.fiveLeft{
+
+}
+#dituContent{
+    width: 700px;
+    height: 600px;
+    margin:90px 0px 0 0;
+    border: 3px solid olive;
+}
+
